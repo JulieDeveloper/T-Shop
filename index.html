@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - 2-3 A14: 電商網頁切版</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/338a6949a5.js" crossorigin="anonymous"></script><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<header>
+  <!-- hamburger -->
+  <label for="menu-toggle" class="menu-toggle-label header-list">
+    <i class="fa-solid fa-bars"></i>
+  </label>
+  <!-- search icon -->
+  <label for="searchbox-toggle" class="header-list searchbox-toggle-label">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </label>
+
+  <!--  brand  -->
+  <a href="#" class="brand">
+    <img src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14985/logo-2021.png" alt="" class="brand-logo">
+    <h1 class="brand-name">TSHIRT STORE <span>&reg;</span></h1>
+  </a>
+  <!--  saved icon  -->
+  <div class="header-list saved-icon">
+    <a href="#" class="header-link-saved">
+      <i class="fa-solid fa-heart"></i>
+    </a>
+  </div>
+  <!-- cart icon -->
+  <div class="header-list cart-icon">
+    <a href="#" class="header-link-cart">
+      <i class="fa-solid fa-bag-shopping"></i>
+    </a>
+  </div>
+
+  <!--   menu   -->
+  <input type="checkbox" class="menu-toggle" id="menu-toggle" />
+  <nav class="menu">
+    <ul class="nav-list container">
+      <li class="nav-item">
+        <a href="#" class="nav-link">
+          <h3>Men</h3>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">
+          <h3>Women</h3>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">
+          <h3>Kids</h3>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <!--   search-box   -->
+  <input type="checkbox" class="searchbox-toggle" id="searchbox-toggle" />
+  <div class="search-box">
+    <input type="text" class="search-input" placeholder=" Keyword ...">
+    <button class="search-submit-btn">Search</button>
+  </div>
+</header>
+
+<!-- category-title -->
+<section class="category-title-section container">
+  <h1>Basic T-shirts</h1>
+</section>
+
+<!-- category-sort -->
+<section class="category-sort-section container">
+  <!--   size -->
+  <div class="category-select-form">
+    <select name="size" id="size-select" class="category-select size-select">
+      <option value="" selected>Size</option>
+      <option value="xs">XS</option>
+      <option value="s">S</option>
+      <option value="m">M</option>
+      <option value="l">L</option>
+      <option value="xl">XL</option>
+    </select>
+    <!-- color -->
+    <select name="color" id="color-select" class="category-select color-select">
+      <option>Color</option>
+      <option value="w">White</option>
+      <option value="b">Black</option>
+      <option value="g">Grey</option>
+      <option value="m">Multi</option>
+    </select>
+    <!--  sort -->
+    <select name="sort" id="sort-select" class="category-select sort-select">
+      <option value="" selected>Sort</option>
+      <option value="0">Newest</option>
+      <option value="1">Popularity</option>
+      <option value="2">In Stock</option>
+      <option value="3">A-Z</option>
+      <option value="4">Z-A</option>
+      <option value="5">Price Ascending</option>
+      <option value="6">Price Descending</option>
+    </select>
+  </div>
+</section>
+<section class="products-section container">
+  <div class="product-wrapper">
+    <card>
+      <div class="item-img-wrapper">
+        <img src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14362/t-shirt.png" alt="" class="item-main-img">
+        <img src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14372/bastian-ignacio-vega-cani-9UAfLTqMoS0-unsplash__2_.png" alt="" class="item-sub-img">
+      </div>
+      <span class="saved-icon-wrapper">
+        <i class="fa-solid fa-heart saving-icon"></i>
+      </span>
+      <div class="card-footer">
+        <p class="product-title">T-shirt Stockholm Base Leaf Green</p>
+        <p class="product-price">29.00 USD</p>
+      </div>
+    </card>
+    <card>
+      <div class="item-img-wrapper">
+        <img src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14362/t-shirt.png" alt="" class="item-main-img">
+        <img src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14365/anomaly-WWesmHEgXDs-unsplash.jpg" alt="" class="item-sub-img">
+      </div>
+      <span class="saved-icon-wrapper">
+        <i class="fa-solid fa-heart saving-icon"></i>
+      </span>
+      <div class="card-footer">
+        <p class="product-title">T-shirt Stockholm Base Golden Yellow</p>
+        <p class="product-price">29.00 USD</p>
+      </div>
+    </card>
+    <card>
+      <div class="item-img-wrapper">
+        <img src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14362/t-shirt.png" alt="" class="item-main-img">
+        <img src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14374/faith-yarn-hgtWvsq5e2c-unsplash.png" alt="" class="item-sub-img">
+      </div>
+      <span class="saved-icon-wrapper">
+        <i class="fa-solid fa-heart saving-icon"></i>
+      </span>
+      <div class="card-footer">
+        <p class="product-title">T-shirt Stockholm Base Black</p>
+        <p class="product-price">29.00 USD</p>
+      </div>
+    </card>
+    <card>
+      <div class="item-img-wrapper">
+        <img src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14362/t-shirt.png" alt="" class="item-main-img">
+        <img src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14373/christian-bolt-VW5VjskNXZ8-unsplash.png" alt="" class="item-sub-img">
+      </div>
+      <span class="saved-icon-wrapper">
+        <i class="fa-solid fa-heart saving-icon"></i>
+      </span>
+      <div class="card-footer">
+        <p class="product-title">T-shirt Stockholm Base Black</p>
+        <p class="product-price">29.00 USD</p>
+      </div>
+    </card>
+    <card>
+      <div class="item-img-wrapper">
+        <img src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14362/t-shirt.png" alt="" class="item-main-img">
+        <img src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14372/bastian-ignacio-vega-cani-9UAfLTqMoS0-unsplash__2_.png" alt="" class="item-sub-img">
+      </div>
+      <span class="saved-icon-wrapper">
+        <i class="fa-solid fa-heart saving-icon"></i>
+      </span>
+      <div class="card-footer">
+        <p class="product-title">T-shirt Stockholm Base Leaf Green</p>
+        <p class="product-price">29.00 USD</p>
+      </div>
+    </card>
+    <card>
+      <div class="item-img-wrapper">
+        <img src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14362/t-shirt.png" alt="" class="item-main-img">
+        <img src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14365/anomaly-WWesmHEgXDs-unsplash.jpg" alt="" class="item-sub-img">
+      </div>
+      <span class="saved-icon-wrapper">
+        <i class="fa-solid fa-heart saving-icon"></i>
+      </span>
+      <div class="card-footer">
+        <p class="product-title">T-shirt Stockholm Base Golden Yellow</p>
+        <p class="product-price">29.00 USD</p>
+      </div>
+    </card>
+    <card>
+      <div class="item-img-wrapper">
+        <img src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14362/t-shirt.png" alt="" class="item-main-img">
+        <img src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14374/faith-yarn-hgtWvsq5e2c-unsplash.png" alt="" class="item-sub-img">
+      </div>
+      <span class="saved-icon-wrapper">
+        <i class="fa-solid fa-heart saving-icon"></i>
+      </span>
+      <div class="card-footer">
+        <p class="product-title">T-shirt Stockholm Base Black</p>
+        <p class="product-price">29.00 USD</p>
+      </div>
+    </card>
+    <card>
+      <div class="item-img-wrapper">
+        <img src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14362/t-shirt.png" alt="" class="item-main-img">
+        <img src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14373/christian-bolt-VW5VjskNXZ8-unsplash.png" alt="" class="item-sub-img">
+      </div>
+      <span class="saved-icon-wrapper">
+        <i class="fa-solid fa-heart saving-icon"></i>
+      </span>
+      <div class="card-footer">
+        <p class="product-title">T-shirt Stockholm Base Black</p>
+        <p class="product-price">29.00 USD</p>
+      </div>
+    </card>
+  </div>
+</section>
+<section class="pagination">
+  <div class="containter">
+    <p class="pagination-text">
+      <span class="current-page">14</span> / <span class="total-page">14</span>
+    </p>
+  </div>
+</section>
+
+<!-- banner section -->
+<section class="banner-section">
+  <div class="banner-img-wrapper">
+    <img src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14376/template.png" alt="" class="banner-background-img">
+  </div>
+  <div class="banner-text">
+    <h3 class="banner-title">Get the latest T-shirt drops in your inbox! Sign up for our Newsletter.</h3>
+    <form action="" class="banner-subscribe-box">
+      <input type="text" class="input-email" placeholder="Enter email for news updates">
+      <button class="email-submit-btn">SIGN UP!</button>
+    </form>
+    <p>By registering you agree with our <a href="#">Integrity Policy</a></p>
+  </div>
+</section>
+<!-- footer -->
+<footer>
+  <p class="footer-text">&copy; 2021 Tshirt Store. All rights reserved.</p>
+</footer>
+<!-- partial -->
+  
+</body>
+</html>
